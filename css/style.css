@@ -1,0 +1,199 @@
+body {
+    font-family: 'Bangers', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeff00;
+}
+
+
+header {
+    background-color: #96a000;
+    color: #a9b500;
+    padding: 15px;
+    text-align: center;
+    border:5px solid #000000;
+    box-shadow: 5px 5px 15px rgba(1, 1, 1, 1);
+}
+element.style {
+    box-shadow: 5px;
+}
+nav a {
+    font-size: 18px; /* Increase font size */
+    padding: 10px 15px; /* Add padding for bigger clickable area */
+    margin: 0 10px; /* Add margin for spacing between buttons */
+    text-decoration: none; /* Remove underline */
+    color: #bbc800; /* Button color */
+    background-color: #000000; /* Background color */
+    border-radius: 5px; /* Optional: rounded corners for a button effect */
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eeff00;
+    border: 5px solid #000;
+    border-radius: 8px;
+    box-shadow: 15px 15px 15px rgba(1, 1, 1, 1);
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #000; /* Black background for contrast */
+    color: #6dff4f; /* Yellow text color */
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Make button take full width */
+    font-size: 16px; /* Set a readable font size */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+button:hover {
+    background-color: #555; /* Darker shade on hover */
+    color: #fff; /* White text color on hover */
+}
+
+
+.post {
+    background-color: #eeff00;
+    margin: 20px auto; /* Centers the post and adds vertical spacing */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px; /* Keeps the post width manageable */
+    border: 5px solid #000;
+    
+    /* Ensuring space on both sides */
+    width: calc(100% - 40px); /* Adjusts width to leave space */
+    max-width: 600px; /* Still caps max width */
+    box-shadow: 5px 5px 15px rgba(1, 1, 1, 1);
+}
+
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Style for profile picture in the header */
+.profile-pic-header {
+    width: 20px;  /* Set width to match the letter height */
+    height: 20px; /* Set height to match the letter height */
+    border-radius: 50%;  /* Make it circular */
+    margin-left: 10px;  /* Add some space between the links */
+    vertical-align: middle;  /* Align it vertically with the text */
+    object-fit: cover;  /* Ensure the image covers the circle */
+}
+
+/* Style for post image */
+.post-image {
+    width: 100%;  /* Adjust to fit the container */
+    max-width: 600px;  /* Limit the size of the image */
+    height: auto;  /* Maintain aspect ratio */
+    margin-top: 10px;  /* Add some space between text and image */
+    border-radius: 20px;  /* Optional: add rounded corners */
+    border: 5px solid #000;  /* Optional: add border */
+}
+
+/* Style for post title */
+/* Style for post title */
+.post h3 {
+    font-size: 32px; /* Increase font size */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Style for post content */
+.post p {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.8; /* Increase line height for better readability */
+    margin: 15px 0; /* Add margin for spacing between paragraphs */
+}
+/* Style for header links (buttons) */
+nav a {
+    font-size: 20px; /* Increase font size for buttons */
+    padding: 12px 18px; /* Add padding for bigger clickable area */
+    margin: 0 12px; /* Add margin for spacing between buttons */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Button color */
+    background-color: #bfcd00; /* Background color */
+    border-radius: 5px; /* Optional: rounded corners for a button effect */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+nav a:hover {
+    background-color: #cad800; /* Change background color on hover */
+}
+
+/* Style for profile picture in header */
+.profile-pic-header {
+    width: 40px;  /* Adjust the width of the profile picture */
+    height: 40px; /* Adjust the height */
+    border-radius: 50%; /* Make it round */
+    margin-left: 10px; /* Space between the image and the links */
+}
+
+/* Logo in header */
+.profile-pic-header {
+    width: 50px;  /* Adjust logo size */
+    height: 50px; /* Adjust logo size */
+    border-radius: 50%; /* Optional: Make logo rounded if needed */
+}
+
+/* Global form style */
+form {
+    width: 80%; /* Adjust form width */
+    margin: 0 auto; /* Center form on the page */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Inputs and button inside the form */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+button {
+    width: 100%; /* Make inputs and button take up full width */
+    padding: 10px;
+    margin: 10px 0; /* Add space between form elements */
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Style for buttons */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Form error messages */
+
+
+/* Modify header style for consistency */
+h1 {
+    text-align: center;
+}
+
+form {
+    box-shadow: 5px 5px 15px rgba(1, 1, 1, 1);
+}
