@@ -29,20 +29,23 @@ if ($searchQuery) {
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $(".like-btn").click(function() {
-                var postId = $(this).data("post-id");
-
-                $.post("like_post.php", { post_id: postId }, function(response) {
-                    if (response.success) {
-                        $("#likes-" + postId).text(response.likes);
-                    } else {
-                        alert(response.error || "Failed to like the post.");
-                    }
-                }, "json");
+        $(document).on('click', '.like-btn', function() {
+            var postId = $(this).data('post-id');
+            
+            $.post("like_post.php", { post_id: postId }, function(response) {
+                if (response.success) {
+                    $("#likes-" + postId).text(response.likes);
+                } else {
+                    alert(response.error || "Failed to like the post.");
+                }
+            }, "json").fail(function(jqXHR, textStatus, errorThrown) {
+                console.error("AJAX error: " + textStatus + ": " + errorThrown);
+                alert("Error occurred while liking the post.");
             });
         });
+
     </script>
+
 </head>
 <body>
     <?php include('includes/header.php'); ?>

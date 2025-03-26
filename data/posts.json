@@ -139,10 +139,8 @@
         "icon": "gmailprof.png",
         "date": "2025-03-22 19:14:33",
         "image": "iconp.png",
-        "likes": 1,
-        "liked_by": [
-            "67db1a2b31b66"
-        ]
+        "likes": 0,
+        "liked_by": []
     },
     {
         "id": "67df1f8b9c925",
