@@ -48,6 +48,7 @@ function savePost($title, $content, $user_id, $image = null) {
         'date' => $date,
         'image' => $image,
         'likes' => 0
+        'liked_by' => ""
     ];
 
     $posts[] = $newPost;
@@ -80,6 +81,22 @@ function getUserById($id) {
     }
     return null;
 }
+
+// Fetch all posts by a specific user
+function getPostsByUser($userId) {
+    $posts = getAllPosts(); // Get all posts from the JSON file
+    $userPosts = [];
+
+    // Loop through all posts and add those that match the user_id
+    foreach ($posts as $post) {
+        if ($post['author'] == $userId) {
+            $userPosts[] = $post;
+        }
+    }
+
+    return $userPosts;
+}
+
 
 // Function to like a post
 function likePost($post_id, $user_id) {

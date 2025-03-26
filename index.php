@@ -11,8 +11,17 @@ $searchQuery = isset($_GET['search']) ? trim($_GET['search']) : '';
 // Determine sorting order
 $sortOrder = isset($_GET['sort']) && $_GET['sort'] === 'asc' ? 'asc' : 'desc';
 
-// Get all posts
-$posts = getAllPosts();
+// Get the user ID from the URL (if provided)
+$userId = isset($_GET['user_id']) ? (int)$_GET['user_id'] : 0;
+
+// Get posts based on the user ID (if any)
+if ($userId) {
+    // Fetch posts by this user
+    $posts = getPostsByUser($userId);
+} else {
+    // Get all posts as usual
+    $posts = getAllPosts();
+}
 
 // Filter posts by title if search query is provided
 if ($searchQuery) {
@@ -43,9 +52,7 @@ if ($searchQuery) {
                 alert("Error occurred while liking the post.");
             });
         });
-
     </script>
-
 </head>
 <body>
     <?php include('includes/header.php'); ?>
@@ -82,6 +89,7 @@ if ($searchQuery) {
             $profilePic = isset($user['profile_pic']) ? $user['profile_pic'] : 'blankProfile.png';
             $userName = isset($user['name']) ? $user['name'] : 'Anonymous';
             $likes = isset($post['likes']) ? $post['likes'] : 0;
+            $userId = $user['id']; // Assuming the user has an 'id' field
 
             echo "<div class='post'>";
             echo "<img src='images/" . htmlspecialchars($profilePic) . "' alt='Profile Picture' class='profile-pic'>";

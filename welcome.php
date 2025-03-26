@@ -19,7 +19,6 @@ $posts = getAllPosts();
 $user_posts = array_filter($posts, function($post) use ($user_id) {
     return $post['author'] === $user_id;
 });
-
 ?>
 
 <!DOCTYPE html>
@@ -63,6 +62,17 @@ $user_posts = array_filter($posts, function($post) use ($user_id) {
         .post p {
             font-size: 16px;
         }
+
+        .likes {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .like-btn {
+            cursor: pointer;
+            font-size: 24px;
+            color: #007BFF;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +110,15 @@ $user_posts = array_filter($posts, function($post) use ($user_id) {
                     echo "<img src='images/" . htmlspecialchars($post['image']) . "' alt='Post Image' class='post-image'>";
                 }
 
+                // Show likes and like button
+                $likes = isset($post['likes']) ? $post['likes'] : 0;  // Default to 0 if likes are not set
+                echo "<div class='likes'>";
+                echo "<span id='likes-" . htmlspecialchars($post['id']) . "'>" . $likes . " likes</span>";
+
+                // Like button (This should trigger the liking functionality)
+                echo "<span class='like-btn' data-post-id='" . htmlspecialchars($post['id']) . "'>👍</span>";
+                echo "</div>";
+
                 echo "<p><small>By " . htmlspecialchars($userName) . " on " . htmlspecialchars($post['date']) . "</small></p>";
                 echo "</div>";
             }
@@ -107,7 +126,25 @@ $user_posts = array_filter($posts, function($post) use ($user_id) {
             echo "<p>You have not posted anything yet.</p>";
         }
         ?>
-
     </div>
+
+    <script>
+        // Add the like button functionality (AJAX call to like the post)
+        $(document).on('click', '.like-btn', function() {
+            var postId = $(this).data('post-id');
+            
+            $.post("like_post.php", { post_id: postId }, function(response) {
+                if (response.success) {
+                    $("#likes-" + postId).text(response.likes + " likes");
+                } else {
+                    alert(response.error || "Failed to like the post.");
+                }
+            }, "json").fail(function(jqXHR, textStatus, errorThrown) {
+                console.error("AJAX error: " + textStatus + ": " + errorThrown);
+                alert("Error occurred while liking the post.");
+            });
+        });
+    </script>
+
 </body>
 </html>
