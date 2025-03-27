@@ -1,8 +1,8 @@
 [
     {
         "id": "67dc323740c25",
-        "title": "Dobrodošli na Click.ba!!",
-        "content": "Dobrodošli na stranicu za djeljenje mnogih avantura i doživljaja, napravite profil već sada!",
+        "title": "Dobrodo\u0161li na Click.ba!!",
+        "content": "Dobrodo\u0161li na stranicu za djeljenje mnogih avantura i do\u017eivljaja, napravite profil ve\u0107 sada!",
         "author": "67db1a2b31b66",
         "icon": "gmailprof.png",
         "date": "2025-03-20 16:20:23",
@@ -11,7 +11,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dc345de3b5f",
@@ -25,7 +26,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dc3527b521c",
@@ -39,7 +41,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dc4abae32e8",
@@ -53,7 +56,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dc53ca710e5",
@@ -67,12 +71,13 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dc5be4d63aa",
-        "title": "Gdje sam bio 😂😂😂",
-        "content": "Slika govori 1000 riječi",
+        "title": "Gdje sam bio \ud83d\ude02\ud83d\ude02\ud83d\ude02",
+        "content": "Slika govori 1000 rije\u010di",
         "author": "67dc590975c9c",
         "icon": "agaga.jpg",
         "date": "2025-03-20 18:18:12",
@@ -81,12 +86,13 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dc5cd7c0241",
-        "title": "Maša",
-        "content": "Maša",
+        "title": "Ma\u0161a",
+        "content": "Ma\u0161a",
         "author": "67dc5bcf6ab18",
         "icon": "IMG-1363958954f2dd8946264f861b1ff613-V.jpg",
         "date": "2025-03-20 18:22:15",
@@ -95,7 +101,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dc65833de14",
@@ -109,7 +116,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67dd9fa325640",
@@ -123,21 +131,22 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67ddafeee4699",
         "title": "Complaints",
-        "content": "Ako imate kakve savjete ili žalbe za ovu stranicu, napišite to u complaints",
+        "content": "Ako imate kakve savjete ili \u017ealbe za ovu stranicu, napi\u0161ite to u complaints",
         "author": "67db1a2b31b66",
         "icon": "gmailprof.png",
         "date": "2025-03-21 18:29:02",
         "image": null,
-        "likes": 2,
+        "likes": 1,
         "liked_by": [
-            "67dc3436e60cc",
-            "67db1a2b31b66"
-        ]
+            "67dc3436e60cc"
+        ],
+        "dislikes": 0
     },
     {
         "id": "67deb97376a24",
@@ -151,7 +160,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67deb98a46c99",
@@ -161,25 +171,25 @@
         "icon": "800px-Albert_Einstein_Head.jpg",
         "date": "2025-03-22 13:22:18",
         "image": "1000003495.jpg",
-        "likes": 2,
+        "likes": 1,
         "liked_by": [
-            "67dc3436e60cc",
-            "67db1a2b31b66"
-        ]
+            "67dc3436e60cc"
+        ],
+        "dislikes": 0
     },
     {
         "id": "67df0c19bda15",
         "title": "Gotov update!!!",
-        "content": "Sada je colors paleta manje bolna za oči, imate hamburger meni za mobitel i žalbe su prikazane!!",
+        "content": "Sada je colors paleta manje bolna za o\u010di, imate hamburger meni za mobitel i \u017ealbe su prikazane!!",
         "author": "67db1a2b31b66",
         "icon": "gmailprof.png",
         "date": "2025-03-22 19:14:33",
         "image": "iconp.png",
-        "likes": 2,
+        "likes": 1,
         "liked_by": [
-            "67dc3436e60cc",
-            "67db1a2b31b66"
-        ]
+            "67dc3436e60cc"
+        ],
+        "dislikes": 0
     },
     {
         "id": "67df1f8b9c925",
@@ -193,7 +203,8 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67df2e952825f",
@@ -207,59 +218,22 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
+        ],
+        "dislikes": 0
     },
     {
         "id": "67e06ae1df965",
         "title": "Click.ba",
-        "content": "Evo kako je izgledao Click.ba u samom početku developmenta:",
+        "content": "Evo kako je izgledao Click.ba u samom po\u010detku developmenta:",
         "author": "67db1a2b31b66",
         "icon": "gmailprof.png",
-        "date": "2025-03-23 20:11:13",
-        "image": "Screenshot1.png",
+        "date": "2025-03-23 12:43:54",
+        "image": "Screenshot_20250323-124204_2.png",
         "likes": 2,
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ]
-    },
-    {
-        "id": "67e1bce9e19b1",
-        "title": "Mainecraft",
-        "content": "Šta radim kad ne kodiram?",
-        "author": "67dc3436e60cc",
-        "icon": "800px-Albert_Einstein_Head.jpg",
-        "date": "2025-03-24 20:13:29",
-        "image": "1000003520.jpg",
-        "likes": 2,
-        "liked_by": [
-            "67dc3436e60cc",
-            "67db1a2b31b66"
-        ]
-    },
-    {
-        "id": "67e1bd0a21727",
-        "title": "Bttf",
-        "content": "Imam novu maskicu!!",
-        "author": "67dc3436e60cc",
-        "icon": "800px-Albert_Einstein_Head.jpg",
-        "date": "2025-03-24 20:14:02",
-        "image": "1000003521.jpg",
-        "likes": 2,
-        "liked_by": [
-            "67dc3436e60cc",
-            "67db1a2b31b66"
-        ]
-    },
-    {
-        "id": "67e454792a05f",
-        "title": "Likes",
-        "content": "Sada možete likeovat 👍👍👍",
-        "author": "67dc3436e60cc",
-        "icon": "800px-Albert_Einstein_Head.jpg",
-        "date": "2025-03-26 19:24:41",
-        "image": null,
-        "likes": 0,
-        "liked_by": []
+        ],
+        "dislikes": 0
     }
 ]
