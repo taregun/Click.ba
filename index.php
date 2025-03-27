@@ -9,7 +9,7 @@ include('includes/functions.php');
 $searchQuery = isset($_GET['search']) ? trim($_GET['search']) : '';
 
 // Determine sorting order
-$sortOrder = isset($_GET['sort']) && $_GET['sort'] === 'asc' ? 'asc' : 'desc';
+$sortOrder = isset($_GET['sort']) ? $_GET['sort'] : 'desc';
 
 // Get the user ID from the URL (if provided)
 $userId = isset($_GET['user_id']) ? (int)$_GET['user_id'] : 0;
@@ -28,6 +28,19 @@ if ($searchQuery) {
     $posts = array_filter($posts, function ($post) use ($searchQuery) {
         return stripos($post['title'], $searchQuery) !== false;
     });
+}
+
+// Sort posts based on the selected option
+if ($sortOrder === 'asc') {
+    usort($posts, function ($a, $b) {
+        return strtotime($a['date']) - strtotime($b['date']); // Oldest to Newest
+    });
+} elseif ($sortOrder === 'desc') {
+    usort($posts, function ($a, $b) {
+        return strtotime($b['date']) - strtotime($a['date']); // Newest to Oldest
+    });
+} elseif ($sortOrder === 'random') {
+    shuffle($posts); // Random order
 }
 
 ?>
@@ -66,8 +79,16 @@ if ($searchQuery) {
     <h1>Welcome to click.ba</h1>
 
     <form action="" method="get" style="text-align:center; margin-top: 20px; width: 50%; max-width: 500px;">
-        <button type="submit" name="sort" value="<?= $sortOrder === 'asc' ? 'desc' : 'asc' ?>" style="width: 100%; padding: 10px; margin-bottom: 10px;">
-            <?= $sortOrder === 'asc' ? 'Sort: Oldest to Newest' : 'Sort: Newest to Oldest' ?>
+        <button type="submit" name="sort" value="<?= $sortOrder === 'asc' ? 'desc' : ($sortOrder === 'random' ? 'asc' : 'random') ?>" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+            <?php
+            if ($sortOrder === 'asc') {
+                echo 'Sort: Oldest to Newest';
+            } elseif ($sortOrder === 'desc') {
+                echo 'Sort: Newest to Oldest';
+            } else {
+                echo 'Sort: Random';
+            }
+            ?>
         </button>
         <input type="text" name="search" placeholder="Search by title" value="<?= htmlspecialchars($searchQuery) ?>" style="width: 100%; padding: 10px; margin-bottom: 10px;">
         <button type="submit" style="width: 100%; padding: 10px;">Search</button>
@@ -75,10 +96,6 @@ if ($searchQuery) {
 
     <?php
     if ($posts):
-        if ($sortOrder === 'desc') {
-            $posts = array_reverse($posts);
-        }
-
         foreach ($posts as $post) {
             $user = getUserById($post['author']);
             if (!$user) {
