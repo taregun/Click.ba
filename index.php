@@ -41,6 +41,10 @@ if ($sortOrder === 'asc') {
     });
 } elseif ($sortOrder === 'random') {
     shuffle($posts); // Random order
+} elseif ($sortOrder === 'alpha') {
+    usort($posts, function ($a, $b) {
+        return strcmp($a['title'], $b['title']); // Alphabetical Order (A to Z)
+    });
 }
 
 ?>
@@ -79,12 +83,14 @@ if ($sortOrder === 'asc') {
     <h1>Welcome to click.ba</h1>
 
     <form action="" method="get" style="text-align:center; margin-top: 20px; width: 50%; max-width: 500px;">
-        <button type="submit" name="sort" value="<?= $sortOrder === 'asc' ? 'desc' : ($sortOrder === 'random' ? 'asc' : 'random') ?>" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <button type="submit" name="sort" value="<?= $sortOrder === 'asc' ? 'desc' : ($sortOrder === 'random' ? 'asc' : ($sortOrder === 'alpha' ? 'desc' : 'alpha')) ?>" style="width: 100%; padding: 10px; margin-bottom: 10px;">
             <?php
             if ($sortOrder === 'asc') {
                 echo 'Sort: Oldest to Newest';
             } elseif ($sortOrder === 'desc') {
                 echo 'Sort: Newest to Oldest';
+            } elseif ($sortOrder === 'alpha') {
+                echo 'Sort: Alphabetical (A to Z)';
             } else {
                 echo 'Sort: Random';
             }
