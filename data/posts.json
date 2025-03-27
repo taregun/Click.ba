@@ -11,8 +11,7 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ],
-        "dislikes": 0
+        ]
     },
     {
         "id": "67dc345de3b5f",
@@ -26,8 +25,7 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ],
-        "dislikes": 0
+        ]
     },
     {
         "id": "67dc3527b521c",
@@ -41,8 +39,7 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ],
-        "dislikes": 0
+        ]
     },
     {
         "id": "67dc4abae32e8",
@@ -56,8 +53,7 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ],
-        "dislikes": 0
+        ]
     },
     {
         "id": "67dc53ca710e5",
@@ -71,8 +67,7 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ],
-        "dislikes": 0
+        ]
     },
     {
         "id": "67dc5be4d63aa",
@@ -82,12 +77,12 @@
         "icon": "agaga.jpg",
         "date": "2025-03-20 18:18:12",
         "image": "1000001397.jpg",
-        "likes": 2,
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
-        ],
-        "dislikes": 0
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
     },
     {
         "id": "67dc5cd7c0241",
@@ -97,12 +92,12 @@
         "icon": "IMG-1363958954f2dd8946264f861b1ff613-V.jpg",
         "date": "2025-03-20 18:22:15",
         "image": "Messenger_creation_D39EC258-F875-4947-AEA7-3789A68ED497.jpeg",
-        "likes": 2,
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
-        ],
-        "dislikes": 0
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
     },
     {
         "id": "67dc65833de14",
@@ -112,12 +107,12 @@
         "icon": "davud.jpg",
         "date": "2025-03-20 18:59:15",
         "image": "IMG-c5f3463315a14f459e8c9bde294e426d-V.jpg",
-        "likes": 2,
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
-        ],
-        "dislikes": 0
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
     },
     {
         "id": "67dd9fa325640",
@@ -131,8 +126,7 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ],
-        "dislikes": 0
+        ]
     },
     {
         "id": "67ddafeee4699",
@@ -142,11 +136,11 @@
         "icon": "gmailprof.png",
         "date": "2025-03-21 18:29:02",
         "image": null,
-        "likes": 1,
+        "likes": 2,
         "liked_by": [
-            "67dc3436e60cc"
-        ],
-        "dislikes": 0
+            "67dc3436e60cc",
+            "67db1a2b31b66"
+        ]
     },
     {
         "id": "67deb97376a24",
@@ -160,8 +154,7 @@
         "liked_by": [
             "67dc3436e60cc",
             "67db1a2b31b66"
-        ],
-        "dislikes": 0
+        ]
     },
     {
         "id": "67deb98a46c99",
@@ -171,11 +164,12 @@
         "icon": "800px-Albert_Einstein_Head.jpg",
         "date": "2025-03-22 13:22:18",
         "image": "1000003495.jpg",
-        "likes": 1,
+        "likes": 3,
         "liked_by": [
-            "67dc3436e60cc"
-        ],
-        "dislikes": 0
+            "67dc3436e60cc",
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
     },
     {
         "id": "67df0c19bda15",
@@ -185,11 +179,12 @@
         "icon": "gmailprof.png",
         "date": "2025-03-22 19:14:33",
         "image": "iconp.png",
-        "likes": 1,
+        "likes": 3,
         "liked_by": [
-            "67dc3436e60cc"
-        ],
-        "dislikes": 0
+            "67dc3436e60cc",
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
     },
     {
         "id": "67df1f8b9c925",
@@ -199,12 +194,12 @@
         "icon": "IMG_20240915_094710_1.jpg",
         "date": "2025-03-22 20:37:31",
         "image": "IMG-b290fb218f6ae257f95ba15467b5435c-V.jpg",
-        "likes": 2,
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
-        ],
-        "dislikes": 0
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
     },
     {
         "id": "67df2e952825f",
@@ -214,12 +209,12 @@
         "icon": "default.png",
         "date": "2025-03-22 21:41:41",
         "image": null,
-        "likes": 2,
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
-        ],
-        "dislikes": 0
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
     },
     {
         "id": "67e06ae1df965",
@@ -227,13 +222,57 @@
         "content": "Evo kako je izgledao Click.ba u samom po\u010detku developmenta:",
         "author": "67db1a2b31b66",
         "icon": "gmailprof.png",
-        "date": "2025-03-23 12:43:54",
-        "image": "Screenshot_20250323-124204_2.png",
-        "likes": 2,
+        "date": "2025-03-23 20:11:13",
+        "image": "Screenshot1.png",
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
-        ],
-        "dislikes": 0
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
+    },
+    {
+        "id": "67e1bce9e19b1",
+        "title": "Mainecraft",
+        "content": "\u0160ta radim kad ne kodiram?",
+        "author": "67dc3436e60cc",
+        "icon": "800px-Albert_Einstein_Head.jpg",
+        "date": "2025-03-24 20:13:29",
+        "image": "1000003520.jpg",
+        "likes": 3,
+        "liked_by": [
+            "67dc3436e60cc",
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
+    },
+    {
+        "id": "67e1bd0a21727",
+        "title": "Bttf",
+        "content": "Imam novu maskicu!!",
+        "author": "67dc3436e60cc",
+        "icon": "800px-Albert_Einstein_Head.jpg",
+        "date": "2025-03-24 20:14:02",
+        "image": "1000003521.jpg",
+        "likes": 3,
+        "liked_by": [
+            "67dc3436e60cc",
+            "67db1a2b31b66",
+            "67dc4aa167b34"
+        ]
+    },
+    {
+        "id": "67e454792a05f",
+        "title": "Likes",
+        "content": "Sada mo\u017eete likeovat \ud83d\udc4d\ud83d\udc4d\ud83d\udc4d",
+        "author": "67dc3436e60cc",
+        "icon": "800px-Albert_Einstein_Head.jpg",
+        "date": "2025-03-26 19:24:41",
+        "image": null,
+        "likes": 2,
+        "liked_by": [
+            "67db1a2b31b66",
+            "67dc3436e60cc"
+        ]
     }
 ]

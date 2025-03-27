@@ -100,50 +100,28 @@ function getPostsByUser($userId) {
 
 
 // Function to like a post
-// Function to like a post
 function likePost($post_id, $user_id) {
     $posts = getAllPosts();
     
     foreach ($posts as &$post) {
         if ($post['id'] === $post_id) {
+            // Initialize liked_by if not set
             if (!isset($post['liked_by'])) {
                 $post['liked_by'] = [];
             }
             
+            // Check if the user already liked the post
             if (in_array($user_id, $post['liked_by'])) {
                 return "You have already liked this post!";
             }
             
+            // Add user to liked_by and increase likes count
             $post['liked_by'][] = $user_id;
             $post['likes'] += 1;
             
+            // Save updated posts
             file_put_contents(POST_FILE, json_encode($posts, JSON_PRETTY_PRINT));
             return "Post liked successfully!";
-        }
-    }
-    return "Post not found!";
-}
-
-// Function to dislike (remove like) from a post
-function dislikePost($post_id, $user_id) {
-    $posts = getAllPosts();
-    
-    foreach ($posts as &$post) {
-        if ($post['id'] === $post_id) {
-            if (!isset($post['liked_by'])) {
-                $post['liked_by'] = [];
-            }
-            
-            if (!in_array($user_id, $post['liked_by'])) {
-                return "You haven't liked this post yet!";
-            }
-
-            // Remove user from the liked_by list and decrease likes
-            $post['liked_by'] = array_diff($post['liked_by'], [$user_id]);
-            $post['likes'] = max(0, $post['likes'] - 1);
-
-            file_put_contents(POST_FILE, json_encode($posts, JSON_PRETTY_PRINT));
-            return "Post disliked successfully!";
         }
     }
     return "Post not found!";
