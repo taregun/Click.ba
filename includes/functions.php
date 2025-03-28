@@ -48,7 +48,8 @@ function savePost($title, $content, $user_id, $image = null) {
         'date' => $date,
         'image' => $image,
         'likes' => 0,
-        "liked_by" => []
+        "liked_by" => [],
+        "disliked_by" => []
 
     ];
 
