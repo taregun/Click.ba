@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="images/gmailprof.png" type="image/png">
     <title>Login - click.ba</title>
     <link rel="stylesheet" href="css/style.css">
 </head>

@@ -24,6 +24,7 @@ $user_posts = array_filter($posts, function($post) use ($user_id) {
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="images/gmailprof.png" type="image/png">
     <title>Welcome - click.ba</title>
     <link rel="stylesheet" href="css/style.css">
     <style>

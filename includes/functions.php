@@ -98,30 +98,38 @@ function getPostsByUser($userId) {
     return $userPosts;
 }
 
-
-// Function to like a post
-function likePost($post_id, $user_id) {
+function toggleLikePost($post_id, $user_id) {
     $posts = getAllPosts();
     
     foreach ($posts as &$post) {
         if ($post['id'] === $post_id) {
-            // Initialize liked_by if not set
+            // Initialize liked_by and disliked_by arrays if not set
             if (!isset($post['liked_by'])) {
                 $post['liked_by'] = [];
             }
-            
-            // Check if the user already liked the post
-            if (in_array($user_id, $post['liked_by'])) {
-                return "You have already liked this post!";
+            if (!isset($post['disliked_by'])) {
+                $post['disliked_by'] = [];
             }
             
-            // Add user to liked_by and increase likes count
+            // Check if the user already liked or disliked the post
+            if (in_array($user_id, $post['liked_by'])) {
+                // User has liked the post, so unlike it
+                $post['liked_by'] = array_diff($post['liked_by'], [$user_id]);
+                $post['likes'] -= 1;
+                return 'unliked';
+            }
+            
+            if (in_array($user_id, $post['disliked_by'])) {
+                // User has disliked the post, so undo the dislike (remove from disliked_by)
+                $post['disliked_by'] = array_diff($post['disliked_by'], [$user_id]);
+                $post['likes'] += 1;
+                return 'undisliked';
+            }
+            
+            // If the user hasn't liked or disliked the post, toggle the action (like or dislike)
             $post['liked_by'][] = $user_id;
             $post['likes'] += 1;
-            
-            // Save updated posts
-            file_put_contents(POST_FILE, json_encode($posts, JSON_PRETTY_PRINT));
-            return "Post liked successfully!";
+            return 'liked';
         }
     }
     return "Post not found!";
