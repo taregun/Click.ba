@@ -75,5 +75,19 @@
         "email": "amar-cerim@hotmail.com",
         "password": "$2y$10$pigIqAjvXC8JF2hHzAUp9euqMHSY9hmI2V3apQhWIVX5\/GS5WMAN2",
         "profile_pic": null
+    },
+    {
+        "id": "67e9b87c03253",
+        "name": "clickPets",
+        "email": "clickPets@gmail.com",
+        "password": "$2y$10$vnf3iKYug7SHrcuX.kyuiOICNG162o35umeO72\/88uGx4lduC9LkG",
+        "profile_pic": "icon2.png"
+    },
+    {
+        "id": "67f7f79b5aa7f",
+        "name": "Ali",
+        "email": "alio.malio@gmail.com",
+        "password": "$2y$10$XocKfV2wp\/yxqyV.o1dmj.m4EgZU7pqBfLqdo\/CAuFe3w8pBtRuXa",
+        "profile_pic": null
     }
 ]

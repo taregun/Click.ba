@@ -127,10 +127,11 @@
         "icon": "gmailprof.png",
         "date": "2025-03-21 17:19:31",
         "image": "1000003501.jpg",
-        "likes": 2,
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
+            "67db1a2b31b66",
+            "67e9b87c03253"
         ],
         "disliked_by": []
     },
@@ -142,10 +143,11 @@
         "icon": "gmailprof.png",
         "date": "2025-03-21 18:29:02",
         "image": null,
-        "likes": 2,
+        "likes": 3,
         "liked_by": [
             "67dc3436e60cc",
-            "67db1a2b31b66"
+            "67db1a2b31b66",
+            "67e9b87c03253"
         ],
         "disliked_by": []
     },
@@ -277,8 +279,173 @@
         "icon": "800px-Albert_Einstein_Head.jpg",
         "date": "2025-03-26 19:24:41",
         "image": null,
+        "likes": 2,
+        "liked_by": [
+            "67db1a2b31b66",
+            "67dc3436e60cc"
+        ],
+        "disliked_by": []
+    },
+    {
+        "id": "67e710c2b053c",
+        "title": "Poplava",
+        "content": "Poplava u Zenici",
+        "author": "67db1a2b31b66",
+        "icon": "gmailprof.png",
+        "date": "2025-03-28 21:12:34",
+        "image": "62abdc8a-bf83-4a70-9622-1da031b4bc96-1_all_1759.jpg",
+        "likes": 2,
+        "liked_by": [
+            "67db1a2b31b66",
+            "67dc3436e60cc"
+        ],
+        "disliked_by": []
+    },
+    {
+        "id": "67e8329bb8de5",
+        "title": "clickPets",
+        "content": "Click pets je novi kanal na Click.ba gdje mo\u017eete postavljati slike svojih ljubimaca i dijeliti ih sa svijetom!!\nEmail: clickPets@gmail.com\nPassword: clickPets123\nLogujte se ve\u0107 sada i postavite slike svojih ljubimaca!!",
+        "author": "67e9b87c03253",
+        "icon": "icon2.png",
+        "date": "2025-03-29 17:49:15",
+        "image": "icon2.png",
+        "likes": 2,
+        "liked_by": [
+            "67dc3436e60cc",
+            "67db1a2b31b66"
+        ],
+        "disliked_by": []
+    },
+    {
+        "id": "67e8329bb8de5",
+        "title": "Memo",
+        "content": "Kupili smo ribicu Memu (Japanska ru\u017ea)",
+        "author": "67e9b87c03253",
+        "icon": "icon2.png",
+        "date": "2025-03-29 17:49:15",
+        "image": "1000003602.jpg",
+        "likes": 2,
+        "liked_by": [
+            "67dc3436e60cc",
+            "67db1a2b31b66"
+        ],
+        "disliked_by": []
+    },
+    {
+        "id": "67e9317d3e841",
+        "title": "Update!!",
+        "content": "Planiram dodati views, channels, subscribe i comments. Ko bi to htio neka napi\u0161e #update ili likeuje ovaj post!!",
+        "author": "67db1a2b31b66",
+        "icon": "gmailprof.png",
+        "date": "2025-03-30 11:56:45",
+        "image": "Screenshot 2025-03-30 135105.png",
+        "likes": 1,
+        "liked_by": [
+            "67e9b87c03253",
+            "67f7f79b5aa7f"
+        ],
+        "disliked_by": [
+            "67f7f79b5aa7f"
+        ]
+    },
+    {
+        "id": "67e9b997088dc",
+        "title": "De\u010dko!",
+        "content": "\ud83d\udc15 Spasili smo psa de\u010dko i nastojimo da mu prona\u0111emo novi dom!! \ud83d\udc15",
+        "author": "67e9b87c03253",
+        "icon": "icon2.png",
+        "date": "2025-03-30 21:37:27",
+        "image": "1000003619.jpg",
+        "likes": 1,
+        "liked_by": [
+            "67e9b87c03253",
+            "67dc531263c3f"
+        ],
+        "disliked_by": [
+            "67dc531263c3f"
+        ]
+    },
+    {
+        "id": "67eac06a2983a",
+        "title": "Bilbo",
+        "content": "Kupili smo Memi prijatelja Bilba (crni)",
+        "author": "67e9b87c03253",
+        "icon": "icon2.png",
+        "date": "2025-03-31 16:18:50",
+        "image": "1000003640.jpg",
+        "likes": 1,
+        "liked_by": [
+            "67db1a2b31b66"
+        ],
+        "disliked_by": []
+    },
+    {
+        "id": "67ed0f4ed4370",
+        "title": "Pogledajte moj kanal!",
+        "content": "https:\/\/youtube.com\/watch?v=KYjCXy0yegI&feature=shared",
+        "author": "67db1a2b31b66",
+        "icon": "gmailprof.png",
+        "date": "2025-04-02 10:19:58",
+        "image": "1000003646.png",
+        "likes": 1,
+        "liked_by": [
+            "67db1a2b31b66"
+        ],
+        "disliked_by": []
+    },
+    {
+        "id": "67ed41c72eda4",
+        "title": "\u0160kolski ra\u010dunar",
+        "content": "Ovo objavljujem sa \u0161kolskog ra\u010dunara :)",
+        "author": "67dc3436e60cc",
+        "icon": "800px-Albert_Einstein_Head.jpg",
+        "date": "2025-04-02 13:55:19",
+        "image": "download.jpg",
         "likes": 0,
         "liked_by": [],
+        "disliked_by": []
+    },
+    {
+        "id": "67f7fe3dec977",
+        "title": "Mercedes",
+        "content": "S class",
+        "author": "67dc531263c3f",
+        "icon": "IMG-14f2c89ed2ac73dfa5f7eb0d59fe65be-V.jpg",
+        "date": "2025-04-10 17:22:05",
+        "image": "IMG-057ac1bc104c7c9ce797dd97181f6f3d-V.jpg",
+        "likes": 0,
+        "liked_by": [],
+        "disliked_by": []
+    },
+    {
+        "id": "67f7ff7f323cd",
+        "title": "Mercedes Maybach v12 car parking",
+        "content": "MERCEDES",
+        "author": "67dc531263c3f",
+        "icon": "IMG-14f2c89ed2ac73dfa5f7eb0d59fe65be-V.jpg",
+        "date": "2025-04-10 17:27:27",
+        "image": "1440x810-screenshot (3).png",
+        "likes": 1,
+        "liked_by": [
+            "67dc531263c3f",
+            "67dc3436e60cc"
+        ],
+        "disliked_by": [
+            "67db1a2b31b66"
+        ]
+    },
+    {
+        "id": "67fb7c21c9542",
+        "title": "More",
+        "content": "Za ovo vrijedi \u017eivjeti",
+        "author": "67dc3436e60cc",
+        "icon": "800px-Albert_Einstein_Head.jpg",
+        "date": "2025-04-13 08:56:01",
+        "image": "1000003843.jpg",
+        "likes": 1,
+        "liked_by": [
+            "67dc3436e60cc"
+        ],
         "disliked_by": []
     }
 ]

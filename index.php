@@ -63,7 +63,7 @@ $nextSortOrder = match ($sortOrder) {
     <title>Home - Click.ba</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
+    <script>
         $(document).on('click', '.like-btn', function() {
             var postId = $(this).data('post-id');
             
@@ -98,11 +98,8 @@ $nextSortOrder = match ($sortOrder) {
                 console.error("AJAX error: " + textStatus + ": " + errorThrown);
                 alert("Error occurred while disliking the post.");
             });
-});
-
-
+        });
     </script>
-
 </head>
 <body>
     <?php include('includes/header.php'); ?>
@@ -140,9 +137,11 @@ $nextSortOrder = match ($sortOrder) {
             <h3><?= htmlspecialchars($post['title']) ?></h3>
             <p><?= nl2br(htmlspecialchars($post['content'])) ?></p>
             <?php if (!empty($post['image'])): ?>
-                <img src='images/<?= htmlspecialchars($post['image']) ?>' alt='Post Image' class='post-image'>
+                <a href="images/<?= htmlspecialchars($post['image']) ?>" target="_blank">
+                    <img src="images/<?= htmlspecialchars($post['image']) ?>" alt="Post Image" class="post-image">
+                </a>
             <?php endif; ?>
-            <p><small>By <?= htmlspecialchars($user['name'] ?? 'Anonymous') ?> on <?= htmlspecialchars($post['date']) ?></small></p>
+            <p><small>By <a href="channel.php?user_id=<?= $user['id'] ?>"><?= htmlspecialchars($user['name'] ?? 'Anonymous') ?></a> on <?= htmlspecialchars($post['date']) ?></small></p>
             
             <!-- Likes display and Like button aligned on the same line -->
             <div style='display: flex; justify-content: space-between; align-items: center;'>
@@ -151,7 +150,6 @@ $nextSortOrder = match ($sortOrder) {
                       style='cursor: pointer; font-size: 32px; margin-left: 10px; vertical-align: middle;'>👍</span>
                 <span class='dislike-btn' data-post-id='<?= htmlspecialchars($post['id']) ?>' 
                     style='cursor: pointer; font-size: 32px; margin-left: 10px; vertical-align: middle;'>👎</span>
-
             </div>
         </div>
     <?php endforeach; else: ?>
